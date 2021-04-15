@@ -1,42 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Form</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('YOUR_USER_ID');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-</head>
-<body>
-    <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
-</body>
-</html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <form action="" method="POST" id="registrationform">
+    <h1>Register</h1>
+    <div class="alert">Message Sent</div>
+    <fieldset>
+      <!-- Section 1 -->
+      <legend><span class="section">1</span>Your Basic Info</legend>
+      <label class="" for="name">Name:</label>
+      <input type="text" name="name" value="" id="name" required />
+
+      <label class="" for="email">Email:</label>
+      <input type="email" name="email" value="" id="email" required />
+
+      <label for="password">password:</label>
+      <input type="password" name="password" value="" id="password" required />
+    </fieldset>
+
+    <fieldset>
+      <!-- section 2 -->
+      <legend><span class="section">2</span>Profile</legend>
+
+      <label class="" for="bio">Bio:</label>
+      <textarea name="bio" id="bio" required></textarea>
+
+      <label for="job">Job Role:</label>
+      <select name="job" id="job" required>
+        <optgroup label="Web">
+          <option value="front_end_developer" id="frontend">Frontend Developer</option>
+          <option value="back_end_developer" id="backend">Backend Developer</option>
+          <option value="fullstack_developer" id="fullstack">Fullstack Developer</option>
+        </optgroup>
+        <optgroup label="Mobile">
+          <option value="android" id="android">Android</option>
+          <option value="ionic" id="ionic">Ionic</option>
+          <option value="phonegap" id="phonegap">PhoneGap</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <label>Interest:</label>
+
+      <select id="interest" required>
+        <option value="development">Development</option>
+        <option value="design">Design</option>
+        <option value="business">Business</option>
+      </select>
+
+
+      <button type="submit" sendMessage()>Register</button>
+  </form>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

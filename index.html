@@ -1,57 +1,58 @@
- <html lang="en">
-<head>
-<meta charset="UTF-8">
-<h1>Real Time</h1>
-<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
-<scriptsrc="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="jquery/iphone-style-checkboxes.js"></script>
-<link rel="stylesheet" href="style.css">
-<script>
-  $(document).ready(function() {
-        $(':checkbox').iphoneStyle({
-            onChange: function(elem,val) {
-                if (val) {
-                    socket.emit('publish', {topic:"led",payload:"on"});
-                } else {
-                    socket.emit('publish', {topic:"led",payload:"off"});
-                }
-            }
-        });
-    });
-</script>
-<script>
-  var socket = io.connect('192.168.1.116:5000');
-  socket.on('connect', function () {
-    socket.on('mqtt', function (msg) {
-      console.log(msg.topic+' '+msg.payload);
-      if (msg.payload == "off") {
-        if ($('input[name=led]').is(':checked')) {
-          $('input[name=led]').prop('checked',false).change();
-        }
-      }
-      if (msg.payload == "on") {
-        if (!$('input[name=led]').is(':checked')) {
-          $('input[name=led]').prop('checked',true).change();
-        }
-      }
-    });
-    socket.emit('subscribe',{topic:'led'});
-  });
-</script>
-</head>
- 
-<body>
-  <div class='table'>
-    <table>
-      <tr>
-        <td style='vertical-align: middle !important;'>
-          LED:
-        </td>
-        <td>
-          <input name="led" checked='checked' class='yesno'type='checkbox' />
-        </td>
-      </tr>
-    </table>
-  </div>
-</body>
-</html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<div class="container">
+    <div class="row clearfix">
+    	<div class="col-md-12 table-responsive">
+			<table class="table table-bordered table-hover table-sortable" id="tab_logic">
+				<thead>
+					<tr >
+						<th class="text-center">
+							Name
+						</th>
+						<th class="text-center">
+							Email
+						</th>
+						<th class="text-center">
+							Notes
+						</th>
+    					<th class="text-center">
+							Option
+						</th>
+        				<th class="text-center" style="border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;">
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr id='addr0' data-id="0" class="hidden">
+						<td data-name="name">
+						    <input type="text" name='name0'  placeholder='Name' class="form-control"/>
+						</td>
+						<td data-name="mail">
+						    <input type="text" name='mail0' placeholder='Email' class="form-control"/>
+						</td>
+						<td data-name="desc">
+						    <textarea name="desc0" placeholder="Description" class="form-control"></textarea>
+						</td>
+    					<td data-name="sel">
+						    <select name="sel0">
+        				        <option value="">Select Option</option>
+    					        <option value="1">Option 1</option>
+        				        <option value="2">Option 2</option>
+        				        <option value="3">Option 3</option>
+						    </select>
+						</td>
+                        <td data-name="del">
+                            <button name="del0" class='btn btn-danger glyphicon glyphicon-remove row-remove'><span aria-hidden="true">×</span></button>
+                        </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<a id="add_row" class="btn btn-primary float-right">Add Row</a>
+</div>

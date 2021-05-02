@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>MQTT JavaScript Button</title>
+	</head>
+
+	<body>
+<!--
+<h3 id="temp_display">..</h3>
+<h3 id="humidity_display">.</h3>
+<h3 id="led_status">..</h3>
+<button id="status_button" type="button" onclick="led_toggle();">led</button> 	
+-->
+
+<h5 align=center>AGENT FORM</h2>
+<form name="forms" id="forms">
+    <label>BEAT
+      <input name="BEAT" type="text" />
+    </label>
+    <br /> 
+    <label>SHOP
+      <input name="SHOP" type="text" />
+    </label>
+    <br /> 
+     <label>SALT QTY
+      <input name="SALT-QTY" type="number" />
+    </label>
+    <br /> 
+    <label>MUSTARD QTY
+      <input name="MUSTARD-QTY" type="number" />
+    </label>
+    <br /> 
+     <label>GEERA QTY
+      <input name="GEERA-QTY" type="number" />
+    </label>
+    <br /> 
+    <label>VENTHYAM QTY
+      <input name="VENTHYAM-QTY" type="number" />
+    </label>
+<br /> 
+    <button onclick="duckyFunction()">PLACE ORDER</button>  
+  </form>
+
+
+		<!-- Source Paho MQTT Client-->
+		<script src="lib/mqttws31.js"></script>
+		<!-- Our Code Goes Here -->
+		<script src="button_test.js"></script>
+		<!-- Start it up! -->
+		<script>connect();</script>
+
+	</body>
+</html>

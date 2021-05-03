@@ -32,7 +32,7 @@ var topic1         = "home/outdoors/tp1";
 function calculateTotal()
 {
   let unit_price={
-    sugar: 50,
+    saltfull: 50,
     butter: 12,
     eggs: 2,
     vanilla:43    
@@ -44,34 +44,36 @@ function calculateTotal()
   shop_name = ($("#shop").val());
   phone_num = ($("#phone").val());
   
-  item_price.sugar = ($("#qty_sugar").val() * unit_price.sugar )
-  $("#price_sugar").val(item_price.sugar);
-  sugr_QTY= ($("#qty_sugar").val());
+  item_price.saltfull = ($("#qty_saltfull").val() * unit_price.saltfull )
+  $("#price_saltfull").val(item_price.saltfull);
+  saltfull_QTY= ($("#qty_saltfull").val());
 
   
-  item_price.butter = ($("#qty_butter").val() * unit_price.butter )
-  $("#price_butter").val(item_price.butter);
-   butter_QTY= ($("#qty_butter").val());
+  item_price.saltpowder = ($("#qty_saltpowder").val() * unit_price.saltpowder )
+  $("#price_saltpowder").val(item_price.saltpowder);
+   saltpowder_QTY= ($("#qty_saltpowder").val());
 
 
 
-  item_price.eggs = ($("#qty_eggs").val() * unit_price.eggs )
-  $("#price_eggs").val(item_price.eggs);  
-  egg_QTY= ($("#qty_eggs").val());
+  item_price.mustard = ($("#qty_mustard").val() * unit_price.mustard )
+  $("#price_mustard").val(item_price.mustard);  
+  mustard_QTY= ($("#qty_mustard").val());
 
 
-  item_price.vanilla = ($("#qty_vanilla").val() * unit_price.vanilla )
-  $("#price_vanilla").val(item_price.vanilla);    
-  vanilla_QTY= ($("#qty_vanilla").val());
-
-  let total = item_price.sugar + item_price.butter + item_price.eggs + item_price.vanilla;
+  item_price.venthyam = ($("#qty_venthyam").val() * unit_price.venthyam )
+  $("#price_venthyam").val(item_price.venthyam);    
+  venthyam_QTY= ($("#qty_venthyam").val());
+	
+	
+ 
+  let total = item_price.saltfull + item_price.saltpowder + item_price.mustard + item_price.venthyam;
 
  
   $("#total_value").text(total);
 
 //###########################################################################################################
 
-var jsonObject =[{Beat: areabeat, shop: shop_name,Phone: phone_num,sugar: sugr_QTY,butter: butter_QTY,Egg: egg_QTY,vanilla: vanilla_QTY}]
+var jsonObject =[{Beat: areabeat, shop: shop_name,Phone: phone_num,sugar: saltfull_QTY,butter: saltpowder_QTY,Egg: mustard_QTY,vanilla: venthyam_QTY}]
 //var data={"BEAT":"mm","SHOP":"kk","SALT-QTY":"2","MUSTARD-QTY":"2","GEERA-QTY":"2","VENTHYAM-QTY":"3"}
 var data= JSON.stringify(jsonObject);
 MyApp.color = data;

@@ -10,8 +10,12 @@ var MyApp = {}; // Globally scoped object
 var client       = null;
 var led_is_on    = null;
 // These are configs	
-var hostname       = "broker.hivemq.com";
-var port           = "8000";
+//var hostname       = "broker.hivemq.com";
+//var port           = "8000";
+var hostname       = "broker.emqx.io";
+var port           = "8083";
+
+
 var clientId       = "mqtt_js_" + parseInt(Math.random() * 100000, 10);
 var temp_topic     = "home/outdoors/temperature";
 var humidity_topic = "home/outdoors/humidity";

@@ -33,9 +33,10 @@ function calculateTotal()
 {
   let unit_price={
     saltfull: 50,
-    butter: 12,
-    eggs: 2,
-    vanilla:43    
+    saltpowder: 12,
+    mustard: 95,
+    venthyam:99, 
+     geeraham:191
   };
   let item_price={}
   

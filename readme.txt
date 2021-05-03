@@ -16,10 +16,6 @@ function bar(){
     alert(MyApp.color); // Alerts 'green'
 } 
 
-
-
-
-
 //###################################################################
 
 {"BEAT":"","SHOP":"","SALT-QTY":"","MUSTARD-QTY":"","GEERA-QTY":"","VENTHYAM-QTY":""}
@@ -32,4 +28,17 @@ https://github.com/eclipse/paho.mqtt.javascript/issues/187#issuecomment-59445034
 mqtt broakers list
 !!!!!!!!!!!!!!!!!!
 https://github.com/mqtt/mqtt.org/wiki/public_brokers
+
+############################################################
+
+https://www.npmjs.com/package/mqtt
+
+browserMqtt.js
+
+
+
+
+
+
+
 

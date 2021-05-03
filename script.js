@@ -63,10 +63,14 @@ function calculateTotal()
   item_price.venthyam = ($("#qty_venthyam").val() * unit_price.venthyam )
   $("#price_venthyam").val(item_price.venthyam);    
   venthyam_QTY= ($("#qty_venthyam").val());
+
+item_price.geeraham = ($("#qty_geeraham").val() * unit_price.geeraham )
+  $("#price_geeraham").val(item_price.geeraham);    
+  geeraham_QTY= ($("#qty_geeraham").val());
 	
 	
  
-  let total = item_price.saltfull + item_price.saltpowder + item_price.mustard + item_price.venthyam;
+  let total = item_price.saltfull + item_price.saltpowder + item_price.mustard + item_price.venthyam + item_price.geeraham;
 
  
   $("#total_value").text(total);

@@ -23,3 +23,8 @@ function bar(){
 //###################################################################
 
 {"BEAT":"","SHOP":"","SALT-QTY":"","MUSTARD-QTY":"","GEERA-QTY":"","VENTHYAM-QTY":""}
+
+
+wss issue 
+###############
+https://github.com/eclipse/paho.mqtt.javascript/issues/187#issuecomment-594450347

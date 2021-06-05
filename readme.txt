@@ -1,3 +1,7 @@
+for sub category
+https://www.studentstutorial.com/javascript/subcategory-list-show.php
+
+
 for multy variable to jonconversion
 
 https://stackoverflow.com/questions/12979335/creating-json-object-with-variables

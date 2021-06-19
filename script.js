@@ -4,7 +4,7 @@
    by Elliot Williams for Hackaday article, 
 */
 // Global variables
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 var MyApp = {}; // Globally scoped object
 var client       = null;

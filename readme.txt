@@ -11,6 +11,9 @@ for multy variable to jonconversion
 
 https://stackoverflow.com/questions/12979335/creating-json-object-with-variables
 
+html javascript mysql
+https://codewithmark.com/javascript-storage-like-mysql
+
 
 
 to use loacl variable in opther function

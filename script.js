@@ -35,11 +35,11 @@ console.log ( today);
 function calculateTotal()
 {
   let unit_price={
-    saltfull: 50,
-    saltpowder: 12,
-    mustard: 95,
-    venthyam:99,
-     geeraham:191
+    saltfull: 160,
+    saltpowder: 220,
+    mustard: 99,
+    venthyam:98,
+     geeraham:192
   };
   let item_price={}
 

@@ -176,16 +176,13 @@ function onMessageArrived(message) {
 
 
 function duck(){
-
-
-     //alert(MyApp.color);
-
+        //alert(MyApp.color);
 	var apple= MyApp.color;
 	//alert(apple);
 	// Send messgae
 	var payload= JSON.stringify(apple);
-  window.alert("Order placed");
-  window.print()
+        window.alert("Order placed");
+        window.print()
 
   //message = json;
 	//console.info('sending: ', message);

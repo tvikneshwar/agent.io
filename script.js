@@ -184,7 +184,10 @@ function duck(){
 	//alert(apple);
 	// Send messgae
 	var payload= JSON.stringify(apple);
-	//message = json;
+  window.alert("Order placed");
+  window.print()
+
+  //message = json;
 	//console.info('sending: ', message);
 	//message.destinationName = status_topic;
 	//message.retained = true;

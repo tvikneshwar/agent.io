@@ -12,8 +12,6 @@ var test =21;
 var client       = null;
 var led_is_on    = null;
 // These are configs
-//var hostname       = "broker.hivemq.com";
-//var port           = "8000";
 var hostname       = "broker.emqx.io";
 var port           = "8083";
 

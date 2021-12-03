@@ -82,12 +82,15 @@
 
 
                 <button v-on:click="printInvoice">Print Invoice</button>
-                <button v-on:click="mqttInvoice">Place Order</button>
+              <!--  <button v-on:click="mqttInvoice">Place Order</button>-->
+                  <button v-on:click="firebase">Place Order</button>
             </div>
 
         </main>
     </div>
 <!-- partial -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js'></script><script  src="./script.js"></script>
 <!--  <script  src="./mqtt.js"></script>  -->
   <!-- Source Paho MQTT Client-->
@@ -98,8 +101,8 @@
   <!--
   <script src="button_test.js"></script>
   -->
-  <!-- Start it up! -->
-  <script>connect();</script>
+  <!--<script>connect();</script> -->
+
 
 </body>
 </html>

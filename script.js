@@ -179,14 +179,14 @@ document.addEventListener('DOMContentLoaded', function(){
                     { description: 'GEERA', quantity: 0, price: 195 },
                     { description: 'MUSTARD', quantity: 0, price: 10 },
                     { description: 'VENTHYAM', quantity: 0, price: 10 },
-                      { description: 'ASSORTED SPICES', quantity: 0, price: 70 },
+                    { description: 'ASSORTED SPICES', quantity: 0, price: 70 },
                 )
             },
             item3: function() {
                 this.items.push(
                   //oil
                     { description: 'UDHAYAN-1Ltr', quantity: 0, price: 85 },
-                      { description: 'UDHAYAN-500ml', quantity: 0, price: 85 },
+                    { description: 'UDHAYAN-500ml', quantity: 0, price: 85 },
 
                 )
             },
@@ -199,16 +199,12 @@ document.addEventListener('DOMContentLoaded', function(){
                       { description: 'Mr Brite White-1Ltr', quantity: 0, price: 85 },
                       { description: 'Mr Brite Color-1Ltr', quantity: 0, price: 85 },
                       { description: 'Herbal Color-1+1', quantity: 0, price: 85 },
-
                       { description: 'Bleaching Powder jet-500gm', quantity: 0, price: 85 },
                       { description: 'Bleaching Powder jet-250gm', quantity: 0, price: 85 },
-
                       { description: 'A1 VINIGER-1Ltr', quantity: 0, price: 85 },
                       { description: 'A1 VINIGER-500ml', quantity: 0, price: 85 },
                       { description: 'A1 VINIGER-200ml', quantity: 0, price: 85 },
-
                       { description: 'ANTOL ANT POWDER-150gm', quantity: 0, price: 85 },
-
                       { description: 'AIRFRESHNER ROUND 70gm', quantity: 0, price: 85 },
                       { description: 'AIRFRESHNER single 70gm', quantity: 0, price: 85 },
 

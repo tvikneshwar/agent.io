@@ -1,4 +1,26 @@
 
+//Unique Firebase Object
+var firebaseConfig = {
+  apiKey: "AIzaSyAQvfr2EQpYgzgDXaNEOYN_KsSn3zwD1q4",
+  authDomain: "agent-f1a72.firebaseapp.com",
+  projectId: "agent-f1a72",
+  storageBucket: "agent-f1a72.appspot.com",
+  messagingSenderId: "255922128056",
+  appId: "1:255922128056:web:93d5154f83404b5c13204d"
+
+
+};
+
+//Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore()
+
+//Variable to access database collection
+//const db = firestore.collection("orderdata2")
+const db = firestore.collection("orderdata3")
+
+
+
 
 /******************************************************Mqtt Begins Here***********************************************************
 /* Eclipse Paho MQTT-JS Utility
@@ -220,6 +242,32 @@ document.addEventListener('DOMContentLoaded', function(){
                     console.log('sending: ', payload);
 
             },
+    //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$firebase function###################################
+            firebase: function() {
+                var bat = this.items;
+                //console.log(bat);
+                MyApp.color=bat;
+                console.log(MyApp.color);
+                  var apple= MyApp.color;
+
+            //*******	Send message********************************
+                  var payload= JSON.stringify(apple);
+                  //var payload=apple;
+                  //Save Form Data To Firebase
+                  //db.collection('orderdata2').doc('price').set(payload);
+                  //Save Form Data To Firebase
+                  db.doc().set({
+                    description: payload,
+
+                  })
+
+                  //alert
+                  alert("Your Form Has Been Submitted Successfully")
+                //   location.reload();
+            },
+
+
+
             printInvoice: function() {
              window.print();
             },

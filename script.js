@@ -177,11 +177,16 @@ document.addEventListener('DOMContentLoaded', function(){
                     { description: 'VENTHYAM', quantity: 0, price: 0 },
 
                     { description: 'ASSORTED SPICES', quantity: 0, price: 70 },
-		                { description: 'UDHAYAN-1Ltr', quantity: 0, price: 135 },
+		    { description: 'UDHAYAN-1Ltr', quantity: 0, price: 135 },
                     { description: 'UDHAYAN-500ml', quantity: 0, price: 67 },
-		                { description: 'sain + Black Phenyel-450ml', quantity: 0, price: 44 },
+		    { description: 'sain + Black Phenyel-450ml', quantity: 0, price: 44 },
                     { description: '7 Star Stain remover', quantity: 0, price: 35 },
                     { description: 'Texma Premium Phenyel-1Ltr', quantity: 0, price: 47.50 },
+		    { description: 'Xall Blleching powder-500g', quantity: 0, price: 25 },
+	            { description: 'Xall Blleching powder-250g', quantity: 0, price: 13 },
+		    { description: 'Xall Phenyel-1Ltr', quantity: 0, price: 31 },
+		    { description: 'Xall color Phenyel-1Ltr', quantity: 0, price: 41 },
+		    { description: 'Xall Black Phenyel-1Ltr', quantity: 0, price: 30 },
                     { description: 'Mr Brite White-1Ltr', quantity: 0, price: 26 },
                     { description: 'Mr Brite Color-1Ltr', quantity: 0, price: 31 },
                     { description: 'Herbal Color-1+1', quantity: 0, price: 70 },
@@ -193,6 +198,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     { description: 'ANTOL ANT POWDER-150gm', quantity: 0, price: 25 },
                     { description: 'AIRFRESHNER ROUND 70gm', quantity: 0, price: 27 },
                     { description: 'AIRFRESHNER single 70gm', quantity: 0, price: 27 },
+			
 
 
                 )

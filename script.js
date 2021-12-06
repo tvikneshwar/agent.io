@@ -293,7 +293,8 @@ document.addEventListener('DOMContentLoaded', function(){
 		    
 		   //if(confirm('Exit Page')){
                    // window.print();
-                   // window.location.reload();  
+		    setTimeout(() => { console.log("World!"); }, 2000);
+                    window.location.reload();  
 		   //}
                 
             },

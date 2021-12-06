@@ -284,9 +284,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
                   //alert
                   alert("Your Form Has Been Submitted Successfully")
-		    if(confirm('Exit Page')){
-                    window.print();
-                    window.location.reload();  
+		  //  if(confirm('Exit Page')){
+                   // window.print();
+                   // window.location.reload();  
                 
             },
 

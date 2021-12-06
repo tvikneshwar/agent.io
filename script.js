@@ -17,7 +17,7 @@ var firestore = firebase.firestore()
 
 //Variable to access database collection
 //const db = firestore.collection("orderdata2")
-const db = firestore.collection("orderdata8")
+const db = firestore.collection("orderdata3")
 
 
 

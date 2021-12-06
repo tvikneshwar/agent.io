@@ -162,10 +162,10 @@ document.addEventListener('DOMContentLoaded', function(){
             Item1: function() {
                 this.items.push(
                   //dATES
-                    { description: 'SEED DATES-500gm', quantity: 0, price:45-48 },
+                    { description: 'SEED DATES-500gm', quantity: 0, price:48 },
                     { description: 'SEED DATES-200GM', quantity: 0, price: 19 },
-                    { description: 'SEED LESS DATES-500gm', quantity: 0, price:50-55 },
-                    { description: 'SEED LESS DATES-200gm', quantity: 0, price: 20-23 },
+                    { description: 'SEED LESS DATES-500gm', quantity: 0, price:55 },
+                    { description: 'SEED LESS DATES-200gm', quantity: 0, price: 23 },
                     { description: 'BLACK DATES-400gm', quantity: 0, price: 80 },
                     { description: 'BLACK DATES-200gm', quantity: 0, price: 40 },
                     { description: 'DRIED GRAPES MALAI ', quantity: 0, price: 70 },
